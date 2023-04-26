@@ -31,7 +31,6 @@ public class Extension {
 
         sb.append("Hello, world!");
 
-
         // ...AND THIS LINE
 
         return sb;
