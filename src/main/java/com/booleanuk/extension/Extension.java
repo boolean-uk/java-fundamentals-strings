@@ -28,7 +28,7 @@ public class Extension {
 
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+            sb.insert(0, "Hello, world!");
 
 
         // ...AND THIS LINE
@@ -42,7 +42,8 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, use an appropriate StringBuilder method to reverse it
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb.insert(0, "Hello, world!");
+        sb.reverse();
 
 
         // ...AND THIS LINE
