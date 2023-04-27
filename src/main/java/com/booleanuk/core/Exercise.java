@@ -9,7 +9,6 @@ public class Exercise {
     // https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/String.html#replace(char,char)
     public String fixedUrl = brokenUrl.replace("z", "s");
 
-
     // Here's a documentation link for all string methods, use it to figure out how to complete the rest of these requirements:
     // https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/String.html#method-summary
 
@@ -25,17 +24,17 @@ public class Exercise {
 
 
     // 4. Using the appropriate string method on url, set the value of the protocol member below
-    public String protocol = "";
+    public String protocol = url.substring(0,5);
 
 
     // 5. Using the appropriate string method on url, set the value of the domain member below
-    public String domain = "";
+    public String domain = url.substring(8, 21);
 
 
     // 6. Set the length member below to the length of the url member
-    public int length = 0;
+    public int length = url.length();
 
 
     // 7. Using concatenation and existing members, set the faqUrl member below to the faq page of the boolean website
-    public String faqUrl = "";
+    public String faqUrl = protocol + "://" + domain + "/faq";
 }
