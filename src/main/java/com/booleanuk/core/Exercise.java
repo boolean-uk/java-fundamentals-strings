@@ -9,7 +9,7 @@ public class Exercise {
     // Using the `replace` method on brokenUrl, set the fixedUrl member below to the
     // correct value.
     // https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/String.html#replace(char,char)
-    public String fixedUrl = "";
+    public String fixedUrl = brokenUrl.replace("z", "s");
 
     // Here's a documentation link for all string methods, use it to figure out how
     // to complete the rest of these requirements:
@@ -18,16 +18,16 @@ public class Exercise {
     // 2. There are currently some upper case characters in the URL. Using an
     // appropriate string method on the fixedUrl member above,
     // set the value of lowerCasedUrl.
-    public String lowerCasedUrl = "";
+    public String lowerCasedUrl = fixedUrl.toLowerCase();
 
     // 3. There is still white space on both ends of the URL! Use the appropriate
     // string method to trim that white space
     // and set the value of the url member below
-    public String url = "";
+    public String url = lowerCasedUrl.trim();
 
     // 4. Using the appropriate string method on url, set the value of the protocol
     // member below
-    public String protocol = "";
+    public String protocol = url.substring(0, 5);
 
     // 5. Using the appropriate string method on url, set the value of the domain
     // member below

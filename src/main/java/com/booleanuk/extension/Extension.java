@@ -62,7 +62,7 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, remove the comma.
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb.append("Hello, world!".replace(",", ""));
         // ...AND THIS LINE
 
         return sb;
@@ -74,7 +74,7 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb.append("Hello, world!".replace("world", "Java"));
         // ...AND THIS LINE
 
         return sb;
