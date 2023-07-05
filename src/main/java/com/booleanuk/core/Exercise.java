@@ -16,7 +16,7 @@ public class Exercise {
 
     // 2. There are currently some upper case characters in the URL. Using an appropriate string method on the fixedUrl member above,
     // set the value of lowerCasedUrl.
-    public String lowerCasedUrl = "";
+    public String lowerCasedUrl = fixedUrl.toLowerCase();
 
 
     // 3. There is still white space on both ends of the URL! Use the appropriate string method to trim that white space
@@ -25,7 +25,7 @@ public class Exercise {
 
 
     // 4. Using the appropriate string method on url, set the value of the protocol member below
-    public String protocol = "";
+    public String protocol = url.substring(0,url.indexOf(":"));
 
 
     // 5. Using the appropriate string method on url, set the value of the domain member below
@@ -33,7 +33,7 @@ public class Exercise {
 
 
     // 6. Set the length member below to the length of the url member
-    public int length = 0;
+    public int length = url.length();
 
 
     // 7. Using concatenation and existing members, set the faqUrl member below to the faq page of the boolean website
