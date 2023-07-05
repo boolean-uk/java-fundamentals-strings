@@ -59,6 +59,11 @@ public class Extension {
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
 
+        sb.append("Hello, world!");
+
+
+        sb.replace(sb.indexOf(","), sb.indexOf(",") + 1, "");
+
 
         // ...AND THIS LINE
 
@@ -72,6 +77,12 @@ public class Extension {
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
+
+
+        sb.append("Hello, world!");
+
+
+        sb.replace(sb.indexOf("world"), sb.indexOf("world") + 5, "Java");
 
 
         // ...AND THIS LINE
