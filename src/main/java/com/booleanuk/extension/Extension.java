@@ -57,7 +57,8 @@ public class Extension {
         // 2. After adding the message, remove the comma.
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
-
+        sb.append("Hello, world!");
+        sb.deleteCharAt(sb.indexOf(","));
 
         // ...AND THIS LINE
 
@@ -71,7 +72,8 @@ public class Extension {
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
-
+        sb.append("Hello, world!");
+        sb.replace(sb.indexOf("world"), sb.indexOf("world") + "world".length(), "Java");
 
         // ...AND THIS LINE
 
