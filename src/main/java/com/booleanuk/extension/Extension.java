@@ -79,8 +79,9 @@ public class Extension {
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
         sb.append("Hello, world!");
-        sb.delete(7,13);
-        sb.append("Java!");
+        sb.replace(7,12,"Java");
+       // sb.delete(7,13);
+      //  sb.append("Java!");
 
         // ...AND THIS LINE
 
