@@ -57,8 +57,9 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, remove the comma.
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
-
+        sb.append("Hello, world!");
+        int commaIndex = sb.indexOf(",");
+        sb.deleteCharAt(commaIndex);
 
         // ...AND THIS LINE
 
@@ -71,7 +72,9 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb.append("Hello, world!");
+        int worldIndex = sb.indexOf("world");
+        sb.replace(worldIndex, worldIndex + 5, "Java");
 
 
         // ...AND THIS LINE
