@@ -7,7 +7,7 @@ public class Exercise {
     // 1. The brokenUrl member above contains an invalid URL. There's a z instead of an s in the protocol (httpz instead of https).
     // Using the `replace` method on brokenUrl, set the fixedUrl member below to the correct value.
     // https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/String.html#replace(char,char)
-    public String fixedUrl = "";
+    public String fixedUrl = brokenUrl.replace('z','s');
 
 
     // Here's a documentation link for all string methods, use it to figure out how to complete the rest of these requirements:
@@ -21,7 +21,7 @@ public class Exercise {
 
     // 3. There is still white space on both ends of the URL! Use the appropriate string method to trim that white space
     // and set the value of the url member below
-    public String url = "";
+    public String url = lowerCasedUrl.trim();
 
 
     // 4. Using the appropriate string method on url, set the value of the protocol member below
@@ -29,13 +29,12 @@ public class Exercise {
 
 
     // 5. Using the appropriate string method on url, set the value of the domain member below
-    public String domain = "";
-
+    public String domain = url.split("/")[2];
 
     // 6. Set the length member below to the length of the url member
     public int length = 0;
 
 
     // 7. Using concatenation and existing members, set the faqUrl member below to the faq page of the boolean website
-    public String faqUrl = "";
+    public String faqUrl = protocol +"://"+ domain + "/"+"faq";
 }
