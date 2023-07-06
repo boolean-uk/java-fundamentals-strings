@@ -43,7 +43,7 @@ public class Extension {
         // 2. After adding the message, use an appropriate StringBuilder method to reverse it
         // WRITE YOUR CODE BETWEEN THIS LINE...
         sb.append("Hello, world!");
-
+        sb.reverse();
 
         // ...AND THIS LINE
 
