@@ -26,17 +26,17 @@ public class Exercise {
 
 
     // 4. Using the appropriate string method on url, set the value of the protocol member below
-    public String protocol = lowerCasedUrl.split(":")[0];
+    public String protocol = url.split(":")[0];
 
 
     // 5. Using the appropriate string method on url, set the value of the domain member below
-    public String domain = lowerCasedUrl.split("/")[2];
+    public String domain = url.split("/")[2];
 
 
     // 6. Set the length member below to the length of the url member
-    public int length = lowerCasedUrl.length();
+    public int length = url.length();
 
 
     // 7. Using concatenation and existing members, set the faqUrl member below to the faq page of the boolean website
-    public String faqUrl = protocol + domain + "/faq";
+    public String faqUrl = protocol + "://"+ domain + "/faq";
 }
