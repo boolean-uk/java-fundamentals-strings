@@ -1,6 +1,5 @@
 package com.booleanuk.core;
 
-
 public class Exercise {
     // A URL consists of these parts: [protocol]://[domain]/[path]
     public String brokenUrl = " httpz://booLeAn.co.uk/who-we-are ";
