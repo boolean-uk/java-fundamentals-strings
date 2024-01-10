@@ -14,6 +14,7 @@ public class Extension {
     // The following block of code is a method. You've been using these during the core criteria, and this is how we
     // create our own methods. You'll be doing this in a future exercise. For now, write your code between the
     // WRITE YOUR CODE BETWEEN THIS LINE...
+
     // ... AND THIS LINE
     // See the below example:
     public void example() {
@@ -29,7 +30,7 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
-
+        sb.append("Hello, world!");
 
         // ...AND THIS LINE
 
@@ -43,8 +44,8 @@ public class Extension {
         // 2. After adding the message, use an appropriate StringBuilder method to reverse it
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
-
-
+        sb.append("Hello, world!");
+        sb.reverse();
         // ...AND THIS LINE
 
         return sb;
@@ -56,7 +57,8 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, remove the comma.
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb.append("Hello, world!");
+        sb.deleteCharAt(5);
 
 
         // ...AND THIS LINE
@@ -71,7 +73,8 @@ public class Extension {
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
-
+        sb.append("Hello, world!");
+        sb.replace(7,12,"Java");
 
         // ...AND THIS LINE
 
