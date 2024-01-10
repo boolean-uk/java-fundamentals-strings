@@ -76,7 +76,6 @@ public class Extension {
         sb.append("Hello, world!");
         int indexOfWorld = sb.indexOf("world");
         sb.replace(indexOfWorld, indexOfWorld + "world".length(), "Java");
-
         // ...AND THIS LINE
 
         return sb;

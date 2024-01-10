@@ -34,7 +34,6 @@ public class Exercise {
 
     // 5. Using the appropriate string method on url, set the value of the domain member below
     String[] string = url.split("/");
-
     public String domain = string[2];
     // 6. Set the length member below to the length of the url member
     public int length = url.length();
