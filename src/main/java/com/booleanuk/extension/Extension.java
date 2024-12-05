@@ -1,5 +1,7 @@
 package com.booleanuk.extension;
 
+
+
 public class Extension {
     // In Java, Strings are immutable. If we want to change a string, we need to create new variables or members that
     // contain the new value. Consider the below code that builds a welcome message for a user:
@@ -29,7 +31,7 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
-
+        sb.append("Hello, world!");
 
         // ...AND THIS LINE
 
@@ -42,7 +44,8 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, use an appropriate StringBuilder method to reverse it
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb.append("Hello, world!");
+        sb.reverse();
 
 
         // ...AND THIS LINE
@@ -57,7 +60,12 @@ public class Extension {
         // 2. After adding the message, remove the comma.
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
+        sb.append("Hello, world!");
 
+        if(sb.toString().contains(",")) {
+            int index = sb.indexOf(",");
+            sb.deleteCharAt(index);
+        }
 
         // ...AND THIS LINE
 
@@ -70,7 +78,10 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb.append("Hello, world!");
+        String replacedWorld = "world";
+        String newWorld = "Java";
+        sb.replace(sb.indexOf(replacedWorld), sb.indexOf(replacedWorld) + replacedWorld.length(), newWorld);
 
 
         // ...AND THIS LINE
