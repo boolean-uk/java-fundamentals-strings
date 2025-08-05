@@ -29,6 +29,8 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // WRITE YOUR CODE BETWEEN THIS LINE...
 
+        sb.append("Hello, world!");
+
 
 
         // ...AND THIS LINE
@@ -42,6 +44,8 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, use an appropriate StringBuilder method to reverse it
         // WRITE YOUR CODE BETWEEN THIS LINE...
+        sb = one();
+        sb.reverse();
 
 
 
@@ -56,7 +60,8 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, remove the comma.
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb = one();
+        sb.deleteCharAt(5);
 
 
         // ...AND THIS LINE
@@ -70,7 +75,8 @@ public class Extension {
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
+        sb = one();
+        sb.replace(7,12, "Java");
 
 
         // ...AND THIS LINE
